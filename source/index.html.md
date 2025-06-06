@@ -5,9 +5,10 @@ language_tabs: # must be one of https://github.com/rouge-ruby/rouge/wiki/List-of
   - shell: cURL
 
 toc_footers:
-  - <a href='https://codia.ai' target='_blank'>Sign Up for a Developer Key</a>
+  - <a href='https://codia.ai/api-keys' target='_blank'>Sign Up for a Developer Key</a>
 
 includes:
+  - schema
   - errors
 
 search: true
@@ -21,7 +22,7 @@ meta:
 
 # Introduction
 
-Welcome to the Codia API! You can use our API to access Anything-To-Design API endpoints, which can recognize images, pdf, psd and other format files and convert them into a unified DSL.
+Welcome to the Codia API! You can use our API to access VisualStruct API endpoints, which can recognize images, pdf, psd and other format files and convert them into a unified DSL.
 
 We have language bindings in Shell, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
@@ -47,7 +48,7 @@ Codia expects for the API key to be included in all API requests to the server i
 You must replace <code>{codia_api_key}</code> with your personal API key.
 </aside>
 
-# Anything-To-Design
+# VisualStruct API
 
 ## Convert Image To Design
 
