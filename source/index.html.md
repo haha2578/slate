@@ -68,7 +68,7 @@ curl 'https://api.codia.ai/v1/open/image_to_design' \
   "code": 0,
   "message": "ok",
   "data": {
-    // dsl here...
+    // The Schema Object Here...
   }
 }
 ```
@@ -84,3 +84,51 @@ This endpoint convert image to design.
 Parameter | Default | Description
 --------- |---------| -----------
 image_url | null    | Image URL that needs to be converted into design.
+
+## Convert PDF To Design
+
+```shell
+curl 'https://api.codia.ai/v1/open/pdf_to_design' \
+  -H 'Authorization: Bearer {codia_api_key}' \
+  -H 'Content-Type: application/json' \
+  --form 'pdf_file=@"xx.pdf"' \
+  --form 'page_no="0"'
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "configuration": {
+      "scalingFactor": 1,
+      "baseWidth": 1940,
+      "measurementUnit": "px"
+    },
+    "pages": [
+      {
+        // The Schema Object Here...
+      }
+    ],
+    "size": {
+      "height": 1080,
+      "width": 1940
+    }
+  }
+}
+```
+
+This endpoint convert pdf to design.
+
+### HTTP Request
+
+`POST https://api.codia.ai/v1/open/pdf_to_design`
+
+### Request Body
+
+Parameter | Default | Description
+--------- |---------| -----------
+pdf_file | null    | PDF file that needs to be converted into design.
+page_no | null    | Pages index of the PDF that need to be converted. Example: [0, 1]
