@@ -26,6 +26,45 @@ Welcome to the Codia API! You can use our API to access VisualStruct API endpoin
 
 We have language bindings in Shell, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
+# Get Started
+
+Getting started with the Codia API is easy! Follow these three simple steps to begin converting your Screenshots and PDFs into structured designs.
+
+## Step 1: Activate Your Subscription
+
+Before you can start using the Codia API, you need to activate a subscription plan. Our API supports two distinct scenarios:
+
+- **Screenshot to Design conversion**: Convert Screenshots (PNG, JPG, etc.) into design structures. [Learn more about Screenshot Visual Struct →](https://codia.ai/visual-struct)
+- **PDF to Design conversion**: Convert PDF documents into design structures. [Learn more about PDF to Visual Struct →](https://codia.ai/pdf-to-visual-struct)
+
+<aside class="notice">
+Important: You need to purchase separate subscriptions for each scenario you plan to use. If you need both Screenshot and PDF conversion capabilities, you'll need to activate subscriptions for both services.
+</aside>
+
+## Step 2: Generate Your API Key
+
+Once you've completed your subscription purchase:
+
+1. Navigate to your **Personal Center** in your Codia account
+2. Go to the [API Keys section](https://codia.ai/api-keys) to request an API key
+3. Your generated API key will work for both Screenshot and PDF conversion scenarios
+
+![API Key Generation](https://static.codia.ai/resources/apikey.png)
+
+<aside class="success">
+Good news! Unlike subscriptions, your API key is universal and works across all scenarios once generated.
+</aside>
+
+## Step 3: Make Your First API Call
+
+You're now ready to start converting your content! Depending on your use case, you can:
+
+- **Convert images**: Use the [Convert Image To Design](#convert-image-to-design) endpoint
+- **Convert PDFs**: Use the [Convert PDF To Design](#convert-pdf-to-design) endpoint
+
+Both endpoints are documented below with complete examples and parameter descriptions to help you get started quickly.
+
+
 # Authentication
 
 > To authorize, use this code:
